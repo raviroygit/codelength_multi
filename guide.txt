@@ -1,0 +1,10 @@
+----------App Setup---------
+
+1--> Install expo cli
+2--> npm expo create-app to create app
+3-->  yarn or npm Install
+4--> add yarn add @react-navigation/native
+5--> npx expo install react-native-screens react-native-safe-area-context
+6--> use SafeAreaProvider in app.js
+7--> install react-native-animated AND add react-native-animated/plugin in babel.config
+8-->install react-native-gesture-handler and inport in app.js
