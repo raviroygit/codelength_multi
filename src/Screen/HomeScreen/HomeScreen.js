@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { Button, View } from 'react-native';
+import { View } from 'react-native';
+import {Button,Text} from 'react-native-paper';
 
 
 function HomeScreen({ navigation }) {
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View >
+            <Text>Home</Text>
             <Button
                 onPress={() => navigation.navigate('Notifications')}
                 title="Go to notifications"
