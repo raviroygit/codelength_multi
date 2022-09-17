@@ -1,28 +1,27 @@
 import * as React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomeScreen from '../../Screen/HomeScreen/HomeScreen';
-import NotificationsScreen from '../../Screen/Notification/Notification';
-import CustomNavigationDrawer from './CustomNavigationDrawer';
+import HomescreenHeader from '../Screen/HomeScreen/HomescreenHeader';
+import CustomNavigationDrawer from '../Custom/CustomNavigationDrawer';
 
 const Drawer = createDrawerNavigator();
 
-
 const NavigationContent = () => {
-    return (
 
+    return (
         <Drawer.Navigator
             // screenOptions={{
-            //     headerShow: true
+            //     // drawerStyle: {
+            //     //   backgroundColor: "white",
+            //     //   zIndex: 100,
+            //     // },
+            //     // drawerPosition: "right",
             // }}
-
-            initialRouteName="Home"
-            drawerContent={props=> <CustomNavigationDrawer {...props}/>}
+            initialRouteName="Hello"
+            drawerContent={props => <CustomNavigationDrawer {...props} />}
         >
             <Drawer.Screen
-             name="Home" component={HomeScreen} />
-            <Drawer.Screen name="Notifications" component={NotificationsScreen} />
-            
-
+                options={{ headerShown: false }}
+                name="Home" component={HomescreenHeader} />
         </Drawer.Navigator>
     );
 }

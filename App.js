@@ -10,9 +10,9 @@ export default function App() {
   const theme = useTheme();
 
   return (
-    <PaperProvider >
+    <PaperProvider theme={theme}>
       <SafeAreaProvider>
-        <StatusBar style="auto" />
+        <StatusBar barStyle="dark-content" />
         <Navigation />
       </SafeAreaProvider>
     </PaperProvider>

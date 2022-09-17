@@ -5,11 +5,13 @@ import NavigationContent from './NavigationContent';
 
 
 
-export default function App() {
+const Navigation=()=> {
   return (
       <NavigationContainer>
         <NavigationContent/>
       </NavigationContainer>
 
   );
-}
+};
+
+export default Navigation;
