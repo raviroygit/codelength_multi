@@ -6,11 +6,8 @@ import { withTheme } from 'react-native-paper';
 const Blogcreen = ({theme,...navProps}) => {
     const { state, navigation } = navProps;
 
-    const scrollViewStyle = {
-        backgroundColor: theme.colors.background
-    }
     return (
-        <View style={scrollViewStyle}>
+        <View>
             <Button mode='contained' onPress={navigation.goBack}> Blog </Button>
             <Text style={{fontSize:50}}>Hello Vlogger </Text>
         </View>

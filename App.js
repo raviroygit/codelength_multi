@@ -12,7 +12,7 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <SafeAreaProvider>
-        <StatusBar barStyle="dark-content" />
+        <StatusBar barStyle="auto" />
         <Navigation />
       </SafeAreaProvider>
     </PaperProvider>
