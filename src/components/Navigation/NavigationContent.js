@@ -2,6 +2,8 @@ import * as React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomescreenHeader from '../Screen/HomeScreen/HomescreenHeader';
 import CustomNavigationDrawer from '../Custom/CustomNavigationDrawer';
+import BlogHeader from '../Screen/Blogs/BlogHeader';
+
 
 const Drawer = createDrawerNavigator();
 
@@ -16,12 +18,17 @@ const NavigationContent = () => {
             //     // },
             //     // drawerPosition: "right",
             // }}
-            initialRouteName="Hello"
+            initialRouteName="Home"
             drawerContent={props => <CustomNavigationDrawer {...props} />}
         >
             <Drawer.Screen
                 options={{ headerShown: false }}
-                name="Home" component={HomescreenHeader} />
+                name="Home" component={HomescreenHeader} 
+            />
+            <Drawer.Screen
+                options={{ headerShown: false }}
+                name="Blogs" component={BlogHeader} 
+            />
         </Drawer.Navigator>
     );
 }

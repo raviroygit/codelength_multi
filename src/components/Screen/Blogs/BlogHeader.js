@@ -1,19 +1,20 @@
 import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CustomAppBar from '../../Custom/CustomHeader';
-import Homescreen from './Homescreen';
+import BlogSreen from './BlogSreen';
 
 const Stack = createNativeStackNavigator();
 
 
-const HomescreenHeader=({ navigation }) =>{
+const BlogSreenHeader=({ navigation }) =>{
+    
     return (
         <Stack.Navigator
             screenOptions={{
                 header: props => <CustomAppBar {...props} />
             }}
         >
-            <Stack.Screen name="HomescreenDetails" component={Homescreen} options={{ title: 'Home' }} />
+            <Stack.Screen name="BlogDetails" component={BlogSreen} options={{ title: 'Blogs' }} />
 
         </Stack.Navigator>
     );
@@ -21,4 +22,4 @@ const HomescreenHeader=({ navigation }) =>{
 
 
 
-export default HomescreenHeader;
+export default BlogSreenHeader;

@@ -2,6 +2,7 @@ import React from "react";
 import { Appbar } from "react-native-paper";
 
 const AppBar = ({ navigation, options, back }) => {
+
     return (
         <>
             <Appbar.Header>
