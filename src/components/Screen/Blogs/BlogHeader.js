@@ -14,7 +14,7 @@ const BlogSreenHeader=({ navigation }) =>{
                 header: props => <CustomAppBar {...props} />
             }}
         >
-            <Stack.Screen name="BlogDetails" component={BlogSreen} options={{ title: 'Blogs' }} />
+            <Stack.Screen name="list" component={BlogSreen} options={{ title: 'Blogs' }} />
 
         </Stack.Navigator>
     );

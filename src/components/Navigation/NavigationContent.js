@@ -24,16 +24,16 @@ const NavigationContent = () => {
                 // drawerPosition: "right",
                 drawerType:drawerTypeForBreakpoint
             }}
-            initialRouteName="Home"
+            initialRouteName="home"
             drawerContent={props => <CustomNavigationDrawer {...props} />}
         >
             <Drawer.Screen
                 options={{ headerShown: false }}
-                name="Home" component={HomescreenHeader} 
+                name="home" component={HomescreenHeader} 
             />
             <Drawer.Screen
                 options={{ headerShown: false }}
-                name="Blogs" component={BlogHeader} 
+                name="blogs" component={BlogHeader} 
             />
         </Drawer.Navigator>
     );
