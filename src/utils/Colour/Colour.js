@@ -1,7 +1,7 @@
 import {useColorScheme} from 'react-native';
 import {DarkTheme, DefaultTheme} from 'react-native-paper';
 
-const FIREHOSE_RED = '#B71C1C';
+const FIREHOSE_RED = 'green';
 
 export default function useTheme() {
   const colorScheme = useColorScheme();
@@ -13,6 +13,7 @@ export default function useTheme() {
     colors: {
       ...baseTheme.colors,
       primary: FIREHOSE_RED,
+      
     },
   };
 
