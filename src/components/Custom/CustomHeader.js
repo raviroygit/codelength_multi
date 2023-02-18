@@ -8,6 +8,7 @@ const AppBar = ({ navigation, options, back }) => {
     const breakpoint = useBreakpoint();
     const showDrawerToggle = showDrawerToggleForBreakpoint(breakpoint);
 
+    console.log(navigation, back, options.title !== "Home")
     return (
         <>
             <Appbar.Header>
@@ -25,11 +26,13 @@ const AppBar = ({ navigation, options, back }) => {
                     />
                 )}
 
-                {back ? <Appbar.BackAction
+
+                <Appbar.Content title={options.title} />
+
+                {options.title !== "Home" && <Appbar.BackAction
                     onPress={navigation.goBack}
                     accessibilityLabel="Back"
-                /> : null}
-                <Appbar.Content title={options.title} />
+                />}
             </Appbar.Header>
         </>
     );

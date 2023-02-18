@@ -5,11 +5,11 @@ import RouteLinking from '../RouteLinking/RouteLinking';
 
 
 
-const Navigation=()=> {
+const Navigation = () => {
   return (
-      <NavigationContainer linking={RouteLinking}>
-        <NavigationContent/>
-      </NavigationContainer>
+    <NavigationContainer linking={RouteLinking}>
+      <NavigationContent />
+    </NavigationContainer>
 
   );
 };

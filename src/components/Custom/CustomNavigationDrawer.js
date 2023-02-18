@@ -1,5 +1,5 @@
 import { DrawerContentScrollView } from "@react-navigation/drawer";
-import { Drawer } from "react-native-paper";
+import { Drawer, Button } from "react-native-paper";
 import { withTheme } from "react-native-paper";
 
 const CustomNavigationDrawer = ({ theme, ...navProps }) => {

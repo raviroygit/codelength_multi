@@ -24,7 +24,9 @@ const DATA = [
 const Item = ({ title }) => {
     console.log(title)
     return (
+        <View>
         <Text>{title.title}</Text>
+        </View>
     );
 };
 
